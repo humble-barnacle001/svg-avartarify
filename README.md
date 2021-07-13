@@ -1,41 +1,41 @@
-# [SVG Avatarify](https://github.com/humble-barnacle001/svg-avartarify)
+# [SVG Avatarify](https://github.com/humble-barnacle001/svg-avatarify)
 
 A simple but highly customisable API endpoint to provide a SVG for the name or initials which shall serve as an avatar.
 
 ## How to use
 
-An SVG image is returned for each request to [https://svg-avartarify.vercel.app/api/generator](https://svg-avartarify.vercel.app/api/generator). The following customisation options are available:
+An SVG image is returned for each request to [https://svg-avatarify.vercel.app/api/generator](https://svg-avatarify.vercel.app/api/generator). The following customisation options are available:
 
-| option       | description                                                                                                                                                                                              | example code                                                                           | demo                                                                                                      |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `name`       | Name of the user -> first & last name's initials are extracted                                                                                                                                           | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify                   | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=40)                          |
-| `initials`   | Initials passed directly. When present, `name` query parameter is ignored                                                                                                                                | https://svg-avartarify.vercel.app/api/generator?initials=SA                            | ![](https://svg-avartarify.vercel.app/api/generator?initials=SA&dim=40)                                   |
-| `background` | Background of the image. Pass a valid hex color value without `#`. If absent a random color out of a list is chosen                                                                                      | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&background=567890 | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&background=567890&dim=40)        |
-| `color`      | Color of the initials on the icon. Pass a valid hex color value without `#`. `Default:fff`                                                                                                               | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&color=333         | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&color=333&background=ccc&dim=40) |
-| `dim`        | Dimensions of the image in `pixels`. `Default:50`                                                                                                                                                        | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=40            | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=40)                          |
-| `fontSize`   | Font size of the text in `pixels`. `Default:set by dim parameter = dim/2`                                                                                                                                | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&fontSize=25       | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&fontSize=25&dim=40)              |
-| `case`       | Case of the initials. Available: `0, 2`. If parameter is unused, the initials are captilaised. If `case` parameter is used, `0: no change`, `2: lower case` & if unknown value is passed default is `0`. | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&case=2            | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&case=2&dim=40)                   |
-| `bold`       | If set to true, produces a bold text with `font-weight:700`. `Default:false`                                                                                                                             | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&bold=true         | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&bold=true&dim=40)                |
-| `rounded`    | Number of `pixels` to round at corners. `Default:0`                                                                                                                                                      | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&rounded=10        | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&rounded=10&dim=40)               |
-| `isRounded`  | Set to `true` if circle icon is required. **It is ignored when `rounded` parameter is present**. `Default: false`                                                                                        | https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&isRounded=true    | ![](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&isRounded=true&dim=40)           |
+| option       | description                                                                                                                                                                                              | example code                                                                          | demo                                                                                                     |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `name`       | Name of the user -> first & last name's initials are extracted                                                                                                                                           | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify                   | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=40)                          |
+| `initials`   | Initials passed directly. When present, `name` query parameter is ignored                                                                                                                                | https://svg-avatarify.vercel.app/api/generator?initials=SA                            | ![](https://svg-avatarify.vercel.app/api/generator?initials=SA&dim=40)                                   |
+| `background` | Background of the image. Pass a valid hex color value without `#`. If absent a random color out of a list is chosen                                                                                      | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&background=567890 | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&background=567890&dim=40)        |
+| `color`      | Color of the initials on the icon. Pass a valid hex color value without `#`. `Default:fff`                                                                                                               | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&color=333         | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&color=333&background=ccc&dim=40) |
+| `dim`        | Dimensions of the image in `pixels`. `Default:50`                                                                                                                                                        | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=40            | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=40)                          |
+| `fontSize`   | Font size of the text in `pixels`. `Default:set by dim parameter = dim/2`                                                                                                                                | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&fontSize=25       | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&fontSize=25&dim=40)              |
+| `case`       | Case of the initials. Available: `0, 2`. If parameter is unused, the initials are captilaised. If `case` parameter is used, `0: no change`, `2: lower case` & if unknown value is passed default is `0`. | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&case=2            | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&case=2&dim=40)                   |
+| `bold`       | If set to true, produces a bold text with `font-weight:700`. `Default:false`                                                                                                                             | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&bold=true         | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&bold=true&dim=40)                |
+| `rounded`    | Number of `pixels` to round at corners. `Default:0`                                                                                                                                                      | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&rounded=10        | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&rounded=10&dim=40)               |
+| `isRounded`  | Set to `true` if circle icon is required. **It is ignored when `rounded` parameter is present**. `Default: false`                                                                                        | https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&isRounded=true    | ![](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&isRounded=true&dim=40)           |
 
 ## Demo
 
-    https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100
+    https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100
 
-![1](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100)
+![1](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100)
 
-    https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&rounded=10
+    https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&rounded=10
 
-![2](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&rounded=10)
+![2](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&rounded=10)
 
-    https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&bold=true
+    https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&bold=true
 
-![3](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&bold=true)
+![3](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&bold=true)
 
-    https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&background=fe2&color=333
+    https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&background=fe2&color=333
 
-![3](https://svg-avartarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&background=fe2&color=333)
+![3](https://svg-avatarify.vercel.app/api/generator?name=SVG%20Avatarify&dim=100&isRounded=true&background=fe2&color=333)
 
 ## List of colors present - which shall result from random
 
