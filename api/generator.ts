@@ -46,7 +46,7 @@ export default function (req: VercelRequest, res: VercelResponse) {
     let letters = "";
     const subname = name.split(" ");
     if (!req.query["initials"])
-        letters = subname[0][0] + subname.length > 1 ? subname[subname.length - 1][0]:"";
+        letters = subname[0][0] + (subname.length > 1 ? subname[subname.length - 1][0] : "");
     else letters = name;
 
     if (!background) {
