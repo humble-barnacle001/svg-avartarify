@@ -4,7 +4,7 @@
   "description": "A highly customisable API endpoint to return a SVG avatar-icon from name or initials",
   "main": "index.js",
   "scripts": {
-    "build": "github-readme-to-html README.md index.html"
+    "build": "github-readme-to-html README.md \"SVG Avatarify\""
   },
   "keywords": [],
   "author": "",
