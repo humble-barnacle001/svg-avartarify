@@ -95,7 +95,7 @@ export default function (req: VercelRequest, res: VercelResponse) {
 
     const result = `<svg style="${style}" width="${dimension}px" height="${dimension}px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">@font-face {font-family: "montserratbold";src: url("https://cdn.oxro.io/fonts/montserrat-bold-webfont.woff2") format("woff2"),url("https://cdn.oxro.io/fonts/montserrat-bold-webfont.woff") format("woff");font-weight: normal;font-style: normal;}</style></defs><rect x="0" y="0" width="${dimension}px" height="${dimension}px" rx="${rounded}" style="fill:#${background}"/><text x="50%" y="50%" dy=".1em" fill="#${color}" text-anchor="middle" dominant-baseline="middle" style="font-family: &quot;Montserrat&quot;, sans-serif; font-size: ${fontSize}px; line-height: 1">${letters}</text></svg>`;
 
-    console.log(req.query);
+//     console.log(req.query);
 
     res.setHeader("Content-type", "image/svg+xml")
         .setHeader(
