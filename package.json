@@ -4,12 +4,13 @@
   "description": "A highly customisable API endpoint to return a SVG avatar-icon from name or initials",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "github-readme-to-html README.md index.html"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@vercel/node": "^1.11.1"
+    "@vercel/node": "^1.11.1",
+    "github-readme-to-html": "^1.0.3"
   }
 }
