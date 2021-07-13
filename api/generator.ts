@@ -46,6 +46,7 @@ export default function (req: VercelRequest, res: VercelResponse) {
     let letters = "";
     if (!req.query["initials"])
         name.split(" ").forEach((w) => (letters += w[0]));
+    else letters = name;
 
     if (!background) {
         const colors = [
