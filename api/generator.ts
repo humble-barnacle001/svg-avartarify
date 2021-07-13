@@ -28,7 +28,7 @@ export default function (req: VercelRequest, res: VercelResponse) {
     const dimension =
         req.query["dim"] && /^\d+$/.test(req.query["dim"] as string)
             ? Number.parseInt(req.query["dim"] as string)
-            : 500;
+            : 50;
     const fontSize =
         req.query["fontSize"] && /^\d+$/.test(req.query["fontSize"] as string)
             ? Number.parseInt(req.query["fontSize"] as string)
@@ -44,8 +44,9 @@ export default function (req: VercelRequest, res: VercelResponse) {
         req.query["bold"] && req.query["bold"] === "true" ? true : false;
 
     let letters = "";
+    const subname = name.split(" ");
     if (!req.query["initials"])
-        name.split(" ").forEach((w) => (letters += w[0]));
+        letters = subname[0][0] + subname[subname.length - 1][0];
     else letters = name;
 
     if (!background) {
